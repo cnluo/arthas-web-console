@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Arthas Web Console Login</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="all,follow">
+	<link rel="stylesheet" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../static/css/fontastic.css">
+	<link rel="stylesheet" href="../static/css/Poppins.css">
+	<link rel="stylesheet" href="../static/css/style.default.css" id="theme-stylesheet">
+	<link rel="stylesheet" href="../static/css/custom.css">
+	<link rel="shortcut icon" href="../static/img/favicon.ico">
+	<!-- Tweaks for older IEs-->
+	<!--[if lt IE 9]>
+	        <script src="../static/js/html5shiv.min.js"></script>
+	        <script src="../static/js/respond.min.js"></script><![endif]-->
+	</head>
+	<body>
+		<div class="page login-page">
+			<div class="container d-flex align-items-center">
+				<div class="form-holder has-shadow">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="info d-flex align-items-center">
+								<div class="content">
+									<div class="logo">
+										<h1>Arthas Web Console</h1>
+									</div>
+									<p>阿里巴巴开源组件arthas-boot的可视化管理控制台</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 bg-white">
+							<div class="form d-flex align-items-center">
+								<div class="content">
+									<form method="post" class="form-validate" action="/user/login">
+										<div class="form-group">
+											<input id="login-username" type="text" name="userName" required data-msg="请输入您的用户名" class="input-material"> <label for="login-username" class="label-material">用户名</label>
+										</div>
+										<div class="form-group">
+											<input id="login-password" type="password" name="password" required data-msg="请输入您的密码" class="input-material">
+											<label for="login-password" class="label-material">密 码</label>
+										</div>
+										<button id="login" type="submit" class="btn btn-primary">登录系统</button>
+									</form>
+									<a href="#" class="forgot-pass">忘记密码了吗？</a><br>
+									<small>没有登录账号吗？</small><a href="register.html" class="signup">马上注册一个吧~</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyrights text-center">
+				<p>
+					<a href="#" class="external"></a>
+				</p>
+			</div>
+		</div>
+		<!-- JavaScript files-->
+		<script src="../static/vendor/jquery/jquery.min.js"></script>
+		<script src="../static/vendor/popper.js/umd/popper.min.js"></script>
+		<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../static/vendor/jquery.cookie/jquery.cookie.js"></script>
+		<script src="../static/vendor/chart.js/Chart.min.js"></script>
+		<script src="../static/vendor/jquery-validation/jquery.validate.min.js"></script>
+		<script src="../static/js/front.js"></script>
+	</body>
+</html>

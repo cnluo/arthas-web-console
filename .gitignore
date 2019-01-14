@@ -20,6 +20,7 @@
 *.rar
 
 # project file
+.settings
 .classpath
 .project
 target

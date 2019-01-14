@@ -25,7 +25,7 @@ import io.biuteifo.web.dto.ResponseData;
  * @version 0.0.1
  */
 @Controller
-@RequestMapping("/page")
+@RequestMapping("/demoPage")
 public class PageDemoController extends CommonController {
 
 	/** http://localhost:8081/page/get/Demo */

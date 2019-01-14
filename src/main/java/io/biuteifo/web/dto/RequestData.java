@@ -12,7 +12,7 @@ import io.biuteifo.web.utils.TextUtils;
  * @date 2019年1月11日
  * @version 0.0.1
  */
-public final class RequestData implements Serializable {
+public class RequestData implements Serializable {
 
 	private String id, name, // 基础数据
 			startDate, endData, // 时间
@@ -118,4 +118,9 @@ public final class RequestData implements Serializable {
 	}
 
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public String toString() {
+		return TextUtils.object2JsonString(this);
+	}
 }
