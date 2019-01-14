@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## 阿里巴巴开源组件arthas-boot的可视化管理控制台
 
-You can use the [editor on GitHub](https://github.com/biuteifo/arthas-web-console/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+基于Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器[Arthas](https://alibaba.github.io/arthas/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Arthas/Alibaba Java
 
-### Markdown
+当你遇到以下类似问题而束手无策时，`Arthas`可以帮助你解决：
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. 这个类从哪个 jar 包加载的？为什么会报各种类相关的 Exception？
+2. 我改的代码为什么没有执行到？难道是我没 commit？分支搞错了？
+3. 遇到问题无法在线上 debug，难道只能通过加日志再重新发布吗？
+4. 线上遇到某个用户的数据处理有问题，但线上同样无法 debug，线下无法重现！
+5. 是否有一个全局视角来查看系统的运行状况？
+6. 有什么办法可以监控到JVM的实时运行状态？
+
+`Arthas`支持JDK 8+，采用命令行交互模式，同时提供丰富的 `Tab` 自动补全功能，进一步方便进行问题的定位和诊断。
+
+
+
+### 快速开始
+
+下载源码：https://github.com/biuteifo/arthas-web-console.git
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+执行命令：mvn clean install
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+进入target目录下
 
-### Jekyll Themes
+```
+执行命令：java -jar arthas-web-console-0.0.1.jar
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/biuteifo/arthas-web-console/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
